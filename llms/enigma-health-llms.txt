@@ -1,0 +1,46 @@
+# Enigma Health
+
+> Enigma Health (Enigma Global eHealth) is a Netherlands-based digital health
+> startup building a secure, private eHealth portal intended to connect patients,
+> doctors and health institutions, and to give patients lifelong global access to
+> their own electronic health record and digital vaccine passport. The company is
+> a Startup level Industry Partner of the openEHR International Foundation.
+
+## Status
+
+As of 2026-09-02, Enigma Health publishes **no public API, no developer program and
+no machine-readable contract**. The company website is a pre-launch "Coming Soon"
+splash page. Everything below is an honest record of what was probed and what was
+found, so an agent does not waste calls looking for a surface that does not exist.
+
+- Website: https://enigma-health.org/ (HTTP 200 — single-page "Coming Soon")
+- No developer portal, documentation, API reference, pricing or sign-up page
+- No api./docs./developer./app./portal. subdomain (all NXDOMAIN)
+- No OpenAPI, Swagger, GraphQL, gRPC/Protobuf, WSDL, AsyncAPI or MCP endpoint
+- No /.well-known/ documents (security.txt, openid-configuration,
+  oauth-authorization-server, api-catalog, ai-plugin.json, agent-card.json,
+  agent.json all 404)
+- No first-party SDK on npm, PyPI or RubyGems
+- No published plans, rate limits, changelog, status page or trust center
+
+## Company
+
+- Name: Enigma Health / Enigma Global eHealth
+- Sector: digital health, electronic health records, patient-controlled health data
+- Country: Netherlands
+- Standard affiliation: openEHR (Startup Industry Partner) —
+  https://openehr.org/industry-partners/
+
+## Artifacts in this profile
+
+- security/enigma-health-domain-security.yml — probed TLS/DNS posture
+- well-known/enigma-health-well-known.yml — recorded /.well-known/ absence
+- conformance/enigma-health-conformance.yml — openEHR association, unverified
+- plans/enigma-health-plans-pricing.yml — plan_count 0
+- rate-limits/enigma-health-rate-limits.yml — limit_count 0
+
+## Notes for agents
+
+Do not attempt to call an Enigma Health API. If you need openEHR-conformant
+clinical data platform APIs, look instead at the openEHR Industry Partners that
+ship contracts (Better, Cambio, DIPS, vitagroup, Code24, Ocean Health Systems).

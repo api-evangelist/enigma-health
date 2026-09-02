@@ -1,0 +1,42 @@
+generated: '2026-09-02'
+method: searched
+source: https://openehr.org/industry-partners/
+note: >-
+  Enigma Health is listed by the openEHR International Foundation as a Startup
+  level Industry Partner (Netherlands), alongside YellowBrink. That is a
+  membership listing, not a conformance statement: the company publishes no
+  machine-readable contract, no REST/GraphQL/MCP surface and no documentation, so
+  no openEHR REST API, archetype, template or AQL conformance can be verified.
+  Recorded here with conforms:false so the market association is captured without
+  crediting a conformance the company has not demonstrated. openEHR is the
+  relevant domain standard for this provider's market (clinical data platforms);
+  re-probe when a platform ships.
+conformance:
+- id: openehr
+  name: openEHR (clinical data platform standard)
+  conforms: false
+  evidence:
+    type: membership-listing
+    url: https://openehr.org/industry-partners/
+    status: 200
+    detail: >-
+      Listed as an openEHR Startup Industry Partner. The per-partner detail page
+      https://openehr.org/community/industry_partners_detail/enigma-health now
+      returns HTTP 404. No published contract exists to test against the openEHR
+      REST API specifications.
+- id: fhir
+  name: HL7 FHIR
+  conforms: false
+  evidence:
+    type: absence
+    url: https://enigma-health.org/
+    status: 200
+    detail: No FHIR capability statement, resource endpoint or claim published on any company host.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  evidence:
+    type: absence
+    url: https://enigma-health.org/.well-known/oauth-authorization-server
+    status: 404
+    detail: No authorization-server or OpenID Connect discovery document served.

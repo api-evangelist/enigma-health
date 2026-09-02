@@ -1,0 +1,11 @@
+generated: '2026-09-02'
+method: searched
+source: https://enigma-health.org/
+limit_count: 0
+note: >-
+  No rate limits are documented because Enigma Health publishes no API and no
+  developer documentation. There is no developer portal, no api./docs./developer.
+  subdomain (all NXDOMAIN), and no documented endpoint whose limits could be
+  recorded. Response headers observed on the marketing host carry no
+  X-RateLimit-*, RateLimit-* or Retry-After signal.
+rate_limits: []

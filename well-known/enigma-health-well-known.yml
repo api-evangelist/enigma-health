@@ -1,0 +1,35 @@
+generated: '2026-09-02'
+method: probed
+source: live HTTPS probes of the named /.well-known/ paths on every host in apis.yml
+note: >-
+  Every named path returned 404 on the only host this company operates
+  (enigma-health.org). No WellKnown or SecurityTxt pointer is wired in apis.yml
+  because nothing was served — this file records a verified absence, not a
+  presence. The site is a WordPress "Coming Soon" splash; the only machine-readable
+  surface on the host is the generic WordPress core REST API at /wp-json/ (HTTP 200),
+  which is the CMS behind the marketing page and not a product API Enigma Health
+  publishes, so it is deliberately not registered as an API.
+hosts:
+- host: enigma-health.org
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

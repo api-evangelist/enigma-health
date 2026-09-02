@@ -1,0 +1,12 @@
+generated: '2026-09-02'
+method: searched
+source: https://enigma-health.org/
+plan_count: 0
+note: >-
+  Enigma Health publishes no pricing, plans or tiers of any kind. The company
+  website (https://enigma-health.org/, HTTP 200) is a single-page "Coming Soon"
+  splash; its Yoast sitemap lists exactly two URLs — the home page and the
+  untouched WordPress /sample-page/ — and no pricing, product, signup or
+  commercial page exists anywhere on the domain. This is a pre-launch startup,
+  not an enterprise "contact us" gate.
+plans: []
