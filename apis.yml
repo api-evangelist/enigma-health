@@ -27,7 +27,6 @@ tags:
 - Interoperability
 - Patient Data
 - Netherlands
-- Startups
 tags_raw:
 - Company
 - Health
@@ -38,7 +37,6 @@ tags_raw:
 - Interoperability
 - Patient Data
 - Netherlands
-- Startup
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -82,3 +80,7 @@ x-coverage:
   - url: https://enigma-health.org/.well-known/agent-card.json
     status: 404
   checked: '2026-09-02'
+x-tags-removed:
+- Startups
+x-company-stage: startup
+x-company-stage-evidence: "own tags: Startup"
